@@ -1,6 +1,6 @@
 # reverse-engineer-spec
 
-A Claude Code skill that analyses an existing project and produces a clean rebuild brief — without inheriting the original's flaws.
+An agent skill that analyses an existing project and produces a clean rebuild brief — without inheriting the original's flaws.
 
 ## What it does
 
