@@ -12,19 +12,28 @@ Point it at any codebase and it will:
 
 Everything lands in a `reverse-engineering-new-project/` folder alongside your source project — spec plus useful reference files copied from the original (brand assets, docs, config templates, domain knowledge). No source code, no migrations, no build artefacts.
 
+## Compatibility
+
+Works with any agent that supports the [Agent Skills](https://agentskills.io) open format, including Claude Code, Codex, Gemini CLI, Cursor, GitHub Copilot, and OpenCode.
+
+References to `superpowers:writing-plans` and `superpowers:brainstorming` in the output require the [Superpowers](https://github.com/obra/superpowers) plugin, which is available for all of the above.
+
 ## Installation
 
-Copy the skill folder into your Claude Code skills directory:
+Copy the skill folder into your skills directory:
 
 ```bash
-# Mac / Linux
+# Claude Code / Gemini CLI / OpenCode — Mac / Linux
 cp -r reverse-engineer-spec ~/.claude/skills/
 
-# Windows
+# Claude Code — Windows
 xcopy /E /I reverse-engineer-spec %USERPROFILE%\.claude\skills\reverse-engineer-spec
+
+# Codex
+cp -r reverse-engineer-spec ~/.codex/skills/
 ```
 
-Claude Code picks it up automatically on next launch.
+The skill is picked up automatically on next launch.
 
 ## Usage
 
